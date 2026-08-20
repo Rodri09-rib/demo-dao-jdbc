@@ -20,9 +20,17 @@ public class Program {
 
        System.out.println (seller);
 
-        System.out.println ("=== TEST 1: Seller findByDepartment ===");
+        System.out.println ("=== TEST 2: Seller findByDepartment ===");
         Department dep = new Department(2, null);
         List<Seller> list = sellerdao.findByDepartment(dep);
+
+        for(Seller obj : list){
+            System.out.println (obj);
+        }
+
+        System.out.println ("=== TEST 3: Seller findAll ===");
+
+        list = sellerdao.findAll();
 
         for(Seller obj : list){
             System.out.println (obj);
