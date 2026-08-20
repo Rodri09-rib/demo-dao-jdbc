@@ -49,7 +49,7 @@ public class Db {
          }
     }
 
-    public void closeStatement (Statement st) {
+    public static void closeStatement(Statement st) {
         if (st != null){
             try {
                 st.close();
@@ -60,7 +60,7 @@ public class Db {
         }
     }
 
-    public void closeResultSet (ResultSet rs){
+    public static void closeResultSet(ResultSet rs){
         if (rs != null){
             try {
                 rs.close();
